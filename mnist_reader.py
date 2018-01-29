@@ -20,8 +20,10 @@ num_images = 10
 #Waiting Time in Seconds between each displayed image
 wait_time = 0.5
 
-print "Images Structure: ", np.shape(training_data[0])
-print "Label Structure: ", np.shape(training_data[1])
+#print("hello world!") 
+
+print ("Images Structure: ", np.shape(training_data[0]))
+print ("Label Structure: ", np.shape(training_data[1]))
 
 
 '''
@@ -37,7 +39,7 @@ def show_images():
 		plt.imshow(img, cmap='gray', interpolation='nearest')
 		plt.show(block=False)				#Show Image
 		im_count+=1
-		print "Image Label: ", label		#Print Image Label
+		print ("Image Label: ", label)		#Print Image Label
 		time.sleep(wait_time)
 		plt.close()
 
@@ -45,9 +47,9 @@ num_training_examples = len(training_data[0])
 num_testing_examples = len(testing_data[0])
 num_input_neurons = len(training_data[0][0])
 
-print "Size Of Training Data:", num_training_examples
-print "Size Of Testing Data:", num_testing_examples
-print "NO. of Input Neurons:", num_input_neurons
+print ("Size Of Training Data:", num_training_examples)
+print ("Size Of Testing Data:", num_testing_examples)
+print ("NO. of Input Neurons:", num_input_neurons)
 
 #Function Call to Plot Each Digit Image
 show_images()

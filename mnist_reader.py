@@ -84,8 +84,7 @@ def  randomly_choose_n_images(n): # inputs: n (number of images)
 		label_count+=1
 	return random_training_data_by_labels
 
-#Function Call to Plot Each Digit Image
-show_images()
+
 
 start_time = time.time()
 print ("\n****************************** Method 1: LIST IMPLEMENTATION")
